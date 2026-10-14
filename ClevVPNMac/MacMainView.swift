@@ -332,6 +332,9 @@ struct MacHomeView: View {
         .sheet(isPresented: $showSettings) {
             MacSettingsSheet().environmentObject(state)
         }
+        .onChange(of: state.settingsDismissTick) { _, _ in
+            showSettings = false
+        }
     }
 
     /// Строка трафика и даты с иконками пинга (слева) и обновления (справа).

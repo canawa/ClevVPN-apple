@@ -150,7 +150,8 @@ struct MacSettingsView: View {
             title: state.subscription?.title,
             info: state.subscription?.userInfo,
             isLoading: state.isLoading,
-            errorMessage: state.errorMessage,
+            // Ошибки/успех — toast на главном экране, не внизу этого sheet.
+            errorMessage: nil,
             supportURL: state.subscription?.supportURL,
             onRefresh: { Task { await state.refreshSubscription() } },
             onDelete: { showLogoutConfirm = true },

@@ -70,8 +70,10 @@ final class MacState: ObservableObject {
     @Published var pingingServerIDs: Set<String> = []
     /// Обнаруженный другой VPN-клиент (Happ, v2ray…), если есть.
     @Published var conflict: ConflictDetector.Conflict?
-    /// Всплывающее уведомление сверху.
+    /// Всплывающее уведомление сверху главного окна (не внутри Settings).
     @Published var toast: ToastMessage?
+    /// Инкремент → MacHomeView закрывает sheet Settings, чтобы тост был на главном экране.
+    @Published private(set) var settingsDismissTick: UInt = 0
 
     let tunnel = MacTunnel()
     private var toastDismissTask: Task<Void, Never>?
@@ -148,8 +150,10 @@ final class MacState: ObservableObject {
             subscription = sub
             SharedStore.cachedSubscription = sub
             errorMessage = nil
+            showToast(.success, text: String(localized: "Subscription updated", bundle: .main))
         } catch {
-            errorMessage = error.localizedDescription
+            errorMessage = nil
+            showToast(.error, text: error.localizedDescription)
         }
     }
 
@@ -309,6 +313,8 @@ final class MacState: ObservableObject {
 
     func showToast(_ kind: ToastMessage.Kind, text: String) {
         toastDismissTask?.cancel()
+        // Закрываем Settings, иначе на macOS sheet перекрывает тост на главном окне.
+        settingsDismissTick &+= 1
         toast = ToastMessage(kind: kind, text: text)
         toastDismissTask = Task { [weak self] in
             try? await Task.sleep(nanoseconds: 2_800_000_000)
