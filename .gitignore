@@ -1,0 +1,21 @@
+.DS_Store
+xcuserdata/
+build/
+DerivedData/
+.idea/
+.vscode/
+*.user
+*.zip
+cache.db
+
+# Local extract / merge scratch
+_extract_mac_ios/
+_extract_mac_source/
+_merge_diffs/
+merged/
+
+# sing-box source checkout used to build Libbox
+scripts/sing-box/
+
+# Heavy binary — rebuild via scripts/bootstrap-ios.sh or scripts/build-libbox.sh
+Frameworks/Libbox.xcframework/

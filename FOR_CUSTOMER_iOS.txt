@@ -1,0 +1,33 @@
+ClevVPN iOS — как получить полностью рабочее приложение с VPN
+=============================================================
+
+Нужно: Mac + Xcode 15+ + платный Apple Developer ($99/год).
+
+1) В Terminal:
+
+   cd путь/к/ClevVPN
+   chmod +x scripts/*.sh
+   ./scripts/bootstrap-ios.sh
+
+   Первый запуск 10–30 минут (скачает Go при необходимости и соберёт
+   ядро sing-box → Frameworks/Libbox.xcframework). Дальше мгновенно.
+
+2) В Xcode (откроется само):
+   - схема ClevVPN
+   - Signing & Capabilities → ваш Team у ClevVPN и PacketTunnel
+
+3) developer.apple.com → Identifiers:
+   - App ID com.clevvpn.ios
+       Network Extensions = Packet Tunnel
+       App Groups = group.com.clevvpn.ios
+   - App ID com.clevvpn.ios.tunnel  (то же)
+   - App Group group.com.clevvpn.ios
+
+4) Подключите iPhone кабелем → Run.
+
+Готово: вводите ключ подписки → Connect → туннель поднимается.
+
+Не используйте схему ClevVPNPreview — это только UI без VPN.
+Симулятор: интерфейс да, системный VPN — только на устройстве.
+
+Подробности: README.md

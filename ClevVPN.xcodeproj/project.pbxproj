@@ -1,0 +1,1427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+
+		E5F6A7B8C9D0E1F2A3B4C5D6 /* Libbox.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E5F6A7B8C9D0E1F2A3B4C5 /* Libbox.xcframework */; };
+		F6A7B8C9D0E1F2A3B4C5D6E7 /* Libbox.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D4E5F6A7B8C9D0E1F2A3B4C5 /* Libbox.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A7B8C9D0E1F2A3B4C5D6E7F8 /* Libbox.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E5F6A7B8C9D0E1F2A3B4C5 /* Libbox.xcframework */; };
+		000ED513E494E12B94ACA354 /* PreviewSubscription.json in Resources */ = {isa = PBXBuildFile; fileRef = 65950F0BBF0709A545248A4A /* PreviewSubscription.json */; };
+		001F8FA3A6EBF8342D2BAF42 /* ClevVPNKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55BEB160C2F6661DDC855020 /* ClevVPNKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		01FBA7FFF981E5C168AFD0A4 /* ClevVPNKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55BEB160C2F6661DDC855020 /* ClevVPNKit.framework */; };
+		02DC67F1853E55AD21E0B5FF /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74F49BADC09B07D0FCCE299 /* Subscription.swift */; };
+		06D9A44BAF18AB737916BF64 /* ClevVPNApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500AA75CC73063C92FEAD916 /* ClevVPNApp.swift */; };
+		07F4EAFBE5EF9F3F3F1C8661 /* PacketTunnel.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2F704E9B42DF992CF4670D7E /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0B99C1757CC9D590B842B793 /* LibboxPingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6332DD54605C2CE4818F01 /* LibboxPingEngine.swift */; };
+		0CB8AC2AD57EF2064FE29C7F /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56702A1E36E76A47F4F7E25C /* AppState.swift */; };
+		0FA96FD5814C52B0B041CDC8 /* ActivationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA149A45081258017A68B0E /* ActivationView.swift */; };
+		A8F3E2D1C0B9A88776655444 /* AppsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F3E2D1C0B9A88776655443 /* AppsTabView.swift */; };
+		B9E4F3D2C1A0B99887766555 /* AppsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F3E2D1C0B9A88776655443 /* AppsTabView.swift */; };
+		1389D6FD3FE0E1302A7D4432 /* ClevLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD347483DB3107AFFB38D4C9 /* ClevLogo.swift */; };
+		182E26C90B55A5A0344801AE /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = BE4298DE664A8990AF2A5303 /* Localizable.xcstrings */; };
+		1E582EE934EE15A1A4B5CE39 /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB08B6A2D88E4060B188DD /* SharedStore.swift */; };
+		20CAF031F4FBB60F2ACBA8B3 /* RoutingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2432CD15878BF9A7A2442B20 /* RoutingView.swift */; };
+		26CEE4F3A2D1EF0625220238 /* MacState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D35A666471912829FB654 /* MacState.swift */; };
+		28E03AB55CD78985DF2AF990 /* ClevVPNKitMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B74E4B0C93E01433A1990E /* ClevVPNKitMac.framework */; };
+		2F329DD60AD308E8AF814F3A /* MacRulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B6567170A0410FA672B6C4 /* MacRulesView.swift */; };
+		2F672F101DEF4682192DFF76 /* ClevVPNKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55BEB160C2F6661DDC855020 /* ClevVPNKit.framework */; };
+		30EDA9ACE3F17F95F0138255 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD58A22DE4097B403708B69 /* Server.swift */; };
+		37B05121F57A9F20854D7B0B /* SingBoxConfigBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74F0619A00B99E600CA1BDF /* SingBoxConfigBuilder.swift */; };
+		390BD287668D0B1E535EB201 /* ClevVPNKitMac.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4B74E4B0C93E01433A1990E /* ClevVPNKitMac.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3ACD08B5FF23B666A7664E41 /* VPNManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC8DACEEC82A31C34E669F4 /* VPNManager.swift */; };
+		3E5CA089BC5D24479CC2607B /* ClevVPNKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55BEB160C2F6661DDC855020 /* ClevVPNKit.framework */; };
+		40A297159296BD06D7C2B496 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA476C8D6A1B7A0540D7291 /* Theme.swift */; };
+		42D28E2191897B8B5A2EEF28 /* PreviewSubscription.json in Resources */ = {isa = PBXBuildFile; fileRef = 65950F0BBF0709A545248A4A /* PreviewSubscription.json */; };
+		46C2F5FD5A4E07F10BFB3A75 /* KillSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77EB3DE14CD434569C0A399 /* KillSwitch.swift */; };
+		46ED8C124F4C76492C46A5A2 /* SubscriptionClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FDA0C67AA135B0A7E02A38 /* SubscriptionClient.swift */; };
+		4880CC01141B53780D4C378F /* LibboxPingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6332DD54605C2CE4818F01 /* LibboxPingEngine.swift */; };
+		495B3F41357D6C4C94563E46 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = BE4298DE664A8990AF2A5303 /* Localizable.xcstrings */; };
+		4B977620CD26D7317CEFC2D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 439BAD1AF51C984ECA1CADF6 /* Assets.xcassets */; };
+		4C10A462EC24675790A198DC /* ShareLinkParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49187DF2DE067D28C41DE92B /* ShareLinkParserTests.swift */; };
+		4C1E20ACD2CA7AE56A14A43A /* ClevLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD347483DB3107AFFB38D4C9 /* ClevLogo.swift */; };
+		4C36E5CB11A0CFB683949582 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74F49BADC09B07D0FCCE299 /* Subscription.swift */; };
+		4DD8BD189E652CFAE992FC13 /* PingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA68154D234F09F9E2E7074 /* PingService.swift */; };
+		57B2CCFD6E82D69AF3F10410 /* MacAppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E815BA896F022F59FBCB54A8 /* MacAppsView.swift */; };
+		57C503823202B049FC3A43F4 /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB08B6A2D88E4060B188DD /* SharedStore.swift */; };
+		57E00024085947723386777C /* ClevVPNApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500AA75CC73063C92FEAD916 /* ClevVPNApp.swift */; };
+		5959F4F0D9C0FED6521CC83A /* SingBoxConfigBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74F0619A00B99E600CA1BDF /* SingBoxConfigBuilder.swift */; };
+		5A732DB474E3A996C46BEB02 /* SubscriptionClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FDA0C67AA135B0A7E02A38 /* SubscriptionClient.swift */; };
+		5B884EFB22546A4C97ECD865 /* ConnectionEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = C241AE878EB7D698FC91E46A /* ConnectionEffects.swift */; };
+		5BDA512BFFB69C31EC8B79C4 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = F548DAF2380DFBF0FF837BA4 /* Components.swift */; };
+		6067A555F77332CD66DAB977 /* ConfigValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDD56FF59F913BAABE48182 /* ConfigValidationTests.swift */; };
+		66201A340C737823EA5186AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 439BAD1AF51C984ECA1CADF6 /* Assets.xcassets */; };
+		6679B5787FA35A07C66E628D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 439BAD1AF51C984ECA1CADF6 /* Assets.xcassets */; };
+		6A3A3A2941CB779432C8F330 /* ConnectionEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = C241AE878EB7D698FC91E46A /* ConnectionEffects.swift */; };
+		6BA6CB5316BF611037375217 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56702A1E36E76A47F4F7E25C /* AppState.swift */; };
+		7AC22B7453AC5F29FF981CC1 /* MacPingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72E0CA2B6396FF83E477B8 /* MacPingEngine.swift */; };
+		7B035D1F840B5B0494DAF345 /* ConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139B808B6F991D16421BCE46 /* ConnectView.swift */; };
+		7B5B006548820E6B8B1C8964 /* XrayConfigParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253C7412765767CA7990AABF /* XrayConfigParserTests.swift */; };
+		7C27D3399501E2794B0E77FB /* ClevVPNKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55BEB160C2F6661DDC855020 /* ClevVPNKit.framework */; };
+		7C6D6D4C2FE71A28C79688E2 /* PingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA68154D234F09F9E2E7074 /* PingService.swift */; };
+		7FB7C6A1F703CBB9F175A6B0 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4B9BFC43FC3B2658C53603 /* PacketTunnelProvider.swift */; };
+		81DCA97CCCEE726CA8414B4B /* ClevVPNKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55BEB160C2F6661DDC855020 /* ClevVPNKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		945088CA482985919BC2946F /* SettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4FD8BE4744CAC15419E329 /* SettingsSheet.swift */; };
+		9619E28607FFB5E5B50EA64F /* ServerCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB69A951F45446E7A6D3784 /* ServerCategory.swift */; };
+		9C3FD7B6B2300C368498EEA5 /* ExtensionPlatformInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FA0CD2D80B6FD71BE7547 /* ExtensionPlatformInterface.swift */; };
+		9F31FDD20380D72722464936 /* ConnectionEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = C241AE878EB7D698FC91E46A /* ConnectionEffects.swift */; };
+		A252234E1F0CE5DFEC36EAA0 /* ClevVPNMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A24A2E9036DBF6F1A4FB250 /* ClevVPNMacApp.swift */; };
+		A2F832BCED729D70B8A6DEBE /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 0F6FFD2C99D971C0149E8361 /* Localizable.xcstrings */; };
+		A41F3A4CDB3FFE9EB0709500 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = F548DAF2380DFBF0FF837BA4 /* Components.swift */; };
+		A4429016D0144F5F168F2D56 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = F548DAF2380DFBF0FF837BA4 /* Components.swift */; };
+		A4ED4A6DF33669824D19EA06 /* MacMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80785048F0FAD5FDBF2C4FA6 /* MacMainView.swift */; };
+		A59D64A99823BA466795BB9A /* ConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139B808B6F991D16421BCE46 /* ConnectView.swift */; };
+		B3D072B86B8C4363F5001E8C /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 0F6FFD2C99D971C0149E8361 /* Localizable.xcstrings */; };
+		BAF7CE17CFB7237C7EDFD85E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E82F5AAB14F20F5CEA66BF7 /* SettingsView.swift */; };
+		BB5E6A9C42491A0A2360D19B /* ActivationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA149A45081258017A68B0E /* ActivationView.swift */; };
+		BC45D0F1EF43A41F721FC761 /* ShareLinkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAB671816CE74C276BB016D /* ShareLinkParser.swift */; };
+		C1700B6E1DC2FDAAEF3C9CF6 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC00BA17B3E4980B62D60D5D /* KeychainStore.swift */; };
+		C253D076A68069B0EE144433 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E82F5AAB14F20F5CEA66BF7 /* SettingsView.swift */; };
+		C4159FB53A4E6E03799821C7 /* ServerCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB69A951F45446E7A6D3784 /* ServerCategory.swift */; };
+		C79D411552664DEAA4969C12 /* XrayConfigParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6321E06F17AE3E0BFE6846C3 /* XrayConfigParser.swift */; };
+		C9BB30B9CB984CF7F5138110 /* ClevLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD347483DB3107AFFB38D4C9 /* ClevLogo.swift */; };
+		C9BC3B75B270EDE1B0D6504B /* PreviewSubscription.json in Resources */ = {isa = PBXBuildFile; fileRef = 65950F0BBF0709A545248A4A /* PreviewSubscription.json */; };
+		CABEA484F2029932B88EE295 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = BE4298DE664A8990AF2A5303 /* Localizable.xcstrings */; };
+		CBBA61B60F752AB29D7875AD /* ConflictDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25BFB59DE61A7992DC25AA1 /* ConflictDetector.swift */; };
+		CCB2DE9EFEEA283A78660C4A /* ClevVPNKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55BEB160C2F6661DDC855020 /* ClevVPNKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CFC65ED4A97351D3DD5137EA /* VPNManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC8DACEEC82A31C34E669F4 /* VPNManager.swift */; };
+		D1E3113308DCD8174B237AFA /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11536A7632E73F6782F64254 /* Routing.swift */; };
+		D4329EB1DDF3BC7731A10D2C /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC00BA17B3E4980B62D60D5D /* KeychainStore.swift */; };
+		D6E319A0EAD460B47C121733 /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11536A7632E73F6782F64254 /* Routing.swift */; };
+		D7F0C8F48EED5E0716578E7C /* AppRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C588DCD68D0C57E254A2223A /* AppRouting.swift */; };
+		D8893AFF7B6F852117A1664A /* ShareLinkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAB671816CE74C276BB016D /* ShareLinkParser.swift */; };
+		DDC712C327611EE36C531BFC /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA476C8D6A1B7A0540D7291 /* Theme.swift */; };
+		DEAD68308FA866C1048BEA9B /* XrayConfigParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6321E06F17AE3E0BFE6846C3 /* XrayConfigParser.swift */; };
+		E3D77E8ED542AC8E639B9535 /* RoutingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2432CD15878BF9A7A2442B20 /* RoutingView.swift */; };
+		E4BD4B7873848BDF5586988F /* SettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4FD8BE4744CAC15419E329 /* SettingsSheet.swift */; };
+		EC791B65BD29B030835B673E /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA476C8D6A1B7A0540D7291 /* Theme.swift */; };
+		F13A1BAC4AF7F27E43ED6A74 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD58A22DE4097B403708B69 /* Server.swift */; };
+		F327370017694654FCF9563A /* AppRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C588DCD68D0C57E254A2223A /* AppRouting.swift */; };
+		F7018D065DDC1F03D3B5DF09 /* MacTunnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72A6B8A17BA74B661912B50 /* MacTunnel.swift */; };
+		FB890ACF7CF680040230915A /* SingBoxConfigBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C986147BE0A8AEC0524B803 /* SingBoxConfigBuilderTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00001EDBEE8B8C41FA922778 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F93E64A46DE96AB26B49922 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25684EBD80E7B41430F2C4A4;
+			remoteInfo = ClevVPNKit;
+		};
+		15865F0EC0ABDF19B1167856 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F93E64A46DE96AB26B49922 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25684EBD80E7B41430F2C4A4;
+			remoteInfo = ClevVPNKit;
+		};
+		60B50F5DF9FDBB745D75D985 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F93E64A46DE96AB26B49922 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25684EBD80E7B41430F2C4A4;
+			remoteInfo = ClevVPNKit;
+		};
+		88B23D5836C6C179BA114645 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F93E64A46DE96AB26B49922 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 801B9E9E2AD1B21C2F3A5E1C;
+			remoteInfo = ClevVPNKitMac;
+		};
+		A35B27EB5C0D8F861D8F4324 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F93E64A46DE96AB26B49922 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 273DE14089D5250D07AEC586;
+			remoteInfo = PacketTunnel;
+		};
+		F268D5492691D87D25317C84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F93E64A46DE96AB26B49922 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25684EBD80E7B41430F2C4A4;
+			remoteInfo = ClevVPNKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1F76E50A5469650B863CE04F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				390BD287668D0B1E535EB201 /* ClevVPNKitMac.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33C3EAD9D5A15E42476EA72B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				07F4EAFBE5EF9F3F3F1C8661 /* PacketTunnel.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B830855EABF954702D6318B9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				001F8FA3A6EBF8342D2BAF42 /* ClevVPNKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC177BD89BDA21A52C446A56 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CCB2DE9EFEEA283A78660C4A /* ClevVPNKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF651AA2EA55C69F9B5BDABD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				81DCA97CCCEE726CA8414B4B /* ClevVPNKit.framework in Embed Frameworks */,
+				F6A7B8C9D0E1F2A3B4C5D6E7 /* Libbox.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+
+		D4E5F6A7B8C9D0E1F2A3B4C5 /* Libbox.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Libbox.xcframework; path = Frameworks/Libbox.xcframework; sourceTree = "<group>"; };
+		0BA149A45081258017A68B0E /* ActivationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationView.swift; sourceTree = "<group>"; };
+		A8F3E2D1C0B9A88776655443 /* AppsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsTabView.swift; sourceTree = "<group>"; };
+		0F6FFD2C99D971C0149E8361 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		11536A7632E73F6782F64254 /* Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
+		139B808B6F991D16421BCE46 /* ConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectView.swift; sourceTree = "<group>"; };
+		1C986147BE0A8AEC0524B803 /* SingBoxConfigBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingBoxConfigBuilderTests.swift; sourceTree = "<group>"; };
+		2432CD15878BF9A7A2442B20 /* RoutingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingView.swift; sourceTree = "<group>"; };
+		253C7412765767CA7990AABF /* XrayConfigParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XrayConfigParserTests.swift; sourceTree = "<group>"; };
+		2F6332DD54605C2CE4818F01 /* LibboxPingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibboxPingEngine.swift; sourceTree = "<group>"; };
+		2F704E9B42DF992CF4670D7E /* PacketTunnel.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = PacketTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		38090BEED65D1499B00C40C7 /* ClevVPNKitTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ClevVPNKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		38EF809A1D767B525AC520B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3E82F5AAB14F20F5CEA66BF7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3FA68154D234F09F9E2E7074 /* PingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingService.swift; sourceTree = "<group>"; };
+		439BAD1AF51C984ECA1CADF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49187DF2DE067D28C41DE92B /* ShareLinkParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareLinkParserTests.swift; sourceTree = "<group>"; };
+		4DA476C8D6A1B7A0540D7291 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		500AA75CC73063C92FEAD916 /* ClevVPNApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClevVPNApp.swift; sourceTree = "<group>"; };
+		52DB08B6A2D88E4060B188DD /* SharedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStore.swift; sourceTree = "<group>"; };
+		55BEB160C2F6661DDC855020 /* ClevVPNKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ClevVPNKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56702A1E36E76A47F4F7E25C /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		57D4DD69B864695CB1FA92EA /* PacketTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PacketTunnel.entitlements; sourceTree = "<group>"; };
+		5DDD56FF59F913BAABE48182 /* ConfigValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigValidationTests.swift; sourceTree = "<group>"; };
+		5EC8DACEEC82A31C34E669F4 /* VPNManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNManager.swift; sourceTree = "<group>"; };
+		6321E06F17AE3E0BFE6846C3 /* XrayConfigParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XrayConfigParser.swift; sourceTree = "<group>"; };
+		6371A8F1E1F1E91E37692ACB /* ClevVPN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClevVPN.entitlements; sourceTree = "<group>"; };
+		65950F0BBF0709A545248A4A /* PreviewSubscription.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PreviewSubscription.json; sourceTree = "<group>"; };
+		682D35A666471912829FB654 /* MacState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacState.swift; sourceTree = "<group>"; };
+		694F4658D1B201D1132EA8FA /* ClevVPNMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClevVPNMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ABB5E1C92BDDE23AE06B169 /* ClevVPN.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ClevVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80785048F0FAD5FDBF2C4FA6 /* MacMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacMainView.swift; sourceTree = "<group>"; };
+		8AAB671816CE74C276BB016D /* ShareLinkParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareLinkParser.swift; sourceTree = "<group>"; };
+		9A24A2E9036DBF6F1A4FB250 /* ClevVPNMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClevVPNMacApp.swift; sourceTree = "<group>"; };
+		9A4B9BFC43FC3B2658C53603 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		A4B6567170A0410FA672B6C4 /* MacRulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacRulesView.swift; sourceTree = "<group>"; };
+		A4B74E4B0C93E01433A1990E /* ClevVPNKitMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ClevVPNKitMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A72A6B8A17BA74B661912B50 /* MacTunnel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacTunnel.swift; sourceTree = "<group>"; };
+		ACB69A951F45446E7A6D3784 /* ServerCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerCategory.swift; sourceTree = "<group>"; };
+		ACD58A22DE4097B403708B69 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		B74F0619A00B99E600CA1BDF /* SingBoxConfigBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingBoxConfigBuilder.swift; sourceTree = "<group>"; };
+		B8BFAB63BC65A8F7E91DD0E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BE4298DE664A8990AF2A5303 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		C241AE878EB7D698FC91E46A /* ConnectionEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionEffects.swift; sourceTree = "<group>"; };
+		C2D493EEB09AAC53AE1A17D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C588DCD68D0C57E254A2223A /* AppRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouting.swift; sourceTree = "<group>"; };
+		C6FDA0C67AA135B0A7E02A38 /* SubscriptionClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionClient.swift; sourceTree = "<group>"; };
+		C74F49BADC09B07D0FCCE299 /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
+		CC00BA17B3E4980B62D60D5D /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
+		CE72E0CA2B6396FF83E477B8 /* MacPingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacPingEngine.swift; sourceTree = "<group>"; };
+		D25BFB59DE61A7992DC25AA1 /* ConflictDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConflictDetector.swift; sourceTree = "<group>"; };
+		E815BA896F022F59FBCB54A8 /* MacAppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacAppsView.swift; sourceTree = "<group>"; };
+		E84FA0CD2D80B6FD71BE7547 /* ExtensionPlatformInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionPlatformInterface.swift; sourceTree = "<group>"; };
+		F548DAF2380DFBF0FF837BA4 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		F77EB3DE14CD434569C0A399 /* KillSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KillSwitch.swift; sourceTree = "<group>"; };
+		FC4FD8BE4744CAC15419E329 /* SettingsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSheet.swift; sourceTree = "<group>"; };
+		FCFB391EE2FCD684B0CDB868 /* ClevVPNPreview.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ClevVPNPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD347483DB3107AFFB38D4C9 /* ClevLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClevLogo.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A3FC71668E799B5778F9D83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28E03AB55CD78985DF2AF990 /* ClevVPNKitMac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		537F7900B032299F0660CA10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C27D3399501E2794B0E77FB /* ClevVPNKit.framework in Frameworks */,
+				E5F6A7B8C9D0E1F2A3B4C5D6 /* Libbox.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		778C2307D015DAB0EE549AB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01FBA7FFF981E5C168AFD0A4 /* ClevVPNKit.framework in Frameworks */,
+				A7B8C9D0E1F2A3B4C5D6E7F8 /* Libbox.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97039939B9B78BD261413F79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E5CA089BC5D24479CC2607B /* ClevVPNKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B60C191724A51E0EAD7EB9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F672F101DEF4682192DFF76 /* ClevVPNKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+
+		D0E1F2A3B4C5D6E7F8091A2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4E5F6A7B8C9D0E1F2A3B4C5 /* Libbox.xcframework */,
+			);
+			name = Frameworks;
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		21E01D76DDDA3A049964B092 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0BA149A45081258017A68B0E /* ActivationView.swift */,
+				A8F3E2D1C0B9A88776655443 /* AppsTabView.swift */,
+				139B808B6F991D16421BCE46 /* ConnectView.swift */,
+				2432CD15878BF9A7A2442B20 /* RoutingView.swift */,
+				FC4FD8BE4744CAC15419E329 /* SettingsSheet.swift */,
+				3E82F5AAB14F20F5CEA66BF7 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3835697FE9EAFC15EBA4008E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6ABB5E1C92BDDE23AE06B169 /* ClevVPN.app */,
+				55BEB160C2F6661DDC855020 /* ClevVPNKit.framework */,
+				A4B74E4B0C93E01433A1990E /* ClevVPNKitMac.framework */,
+				38090BEED65D1499B00C40C7 /* ClevVPNKitTests.xctest */,
+				694F4658D1B201D1132EA8FA /* ClevVPNMac.app */,
+				FCFB391EE2FCD684B0CDB868 /* ClevVPNPreview.app */,
+				2F704E9B42DF992CF4670D7E /* PacketTunnel.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DF77D938CB9F07DFD8A6311 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				439BAD1AF51C984ECA1CADF6 /* Assets.xcassets */,
+				BE4298DE664A8990AF2A5303 /* Localizable.xcstrings */,
+				65950F0BBF0709A545248A4A /* PreviewSubscription.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		50C90DC8F8D04BFA88030766 /* ClevVPNMac */ = {
+			isa = PBXGroup;
+			children = (
+				9A24A2E9036DBF6F1A4FB250 /* ClevVPNMacApp.swift */,
+				D25BFB59DE61A7992DC25AA1 /* ConflictDetector.swift */,
+				38EF809A1D767B525AC520B2 /* Info.plist */,
+				F77EB3DE14CD434569C0A399 /* KillSwitch.swift */,
+				E815BA896F022F59FBCB54A8 /* MacAppsView.swift */,
+				80785048F0FAD5FDBF2C4FA6 /* MacMainView.swift */,
+				CE72E0CA2B6396FF83E477B8 /* MacPingEngine.swift */,
+				A4B6567170A0410FA672B6C4 /* MacRulesView.swift */,
+				682D35A666471912829FB654 /* MacState.swift */,
+				A72A6B8A17BA74B661912B50 /* MacTunnel.swift */,
+			);
+			path = ClevVPNMac;
+			sourceTree = "<group>";
+		};
+		5C66E8FCF2C69AF71B683BD2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C588DCD68D0C57E254A2223A /* AppRouting.swift */,
+				11536A7632E73F6782F64254 /* Routing.swift */,
+				ACD58A22DE4097B403708B69 /* Server.swift */,
+				ACB69A951F45446E7A6D3784 /* ServerCategory.swift */,
+				C74F49BADC09B07D0FCCE299 /* Subscription.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		71D1A59A22E87DE07932B78F /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				FD347483DB3107AFFB38D4C9 /* ClevLogo.swift */,
+				F548DAF2380DFBF0FF837BA4 /* Components.swift */,
+				C241AE878EB7D698FC91E46A /* ConnectionEffects.swift */,
+				4DA476C8D6A1B7A0540D7291 /* Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		7AE1A157F761FAA8F83535DA /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				CC00BA17B3E4980B62D60D5D /* KeychainStore.swift */,
+				52DB08B6A2D88E4060B188DD /* SharedStore.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		A20BCF5391B8C77772331938 = {
+			isa = PBXGroup;
+			children = (
+				E89895C54C03DCF4E39EA640 /* ClevVPN */,
+				E790659B94611F633E00172D /* ClevVPNKit */,
+				C7797CC5DE9A1A61CF183145 /* ClevVPNKitTests */,
+				50C90DC8F8D04BFA88030766 /* ClevVPNMac */,
+				EFA8A20D308E8DA300FDEBF3 /* PacketTunnel */,
+			D0E1F2A3B4C5D6E7F8091A2B /* Frameworks */,
+				3835697FE9EAFC15EBA4008E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C7797CC5DE9A1A61CF183145 /* ClevVPNKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				5DDD56FF59F913BAABE48182 /* ConfigValidationTests.swift */,
+				49187DF2DE067D28C41DE92B /* ShareLinkParserTests.swift */,
+				1C986147BE0A8AEC0524B803 /* SingBoxConfigBuilderTests.swift */,
+				253C7412765767CA7990AABF /* XrayConfigParserTests.swift */,
+			);
+			path = ClevVPNKitTests;
+			sourceTree = "<group>";
+		};
+		D9C805320334DCE4AAA653D8 /* ConfigBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				B74F0619A00B99E600CA1BDF /* SingBoxConfigBuilder.swift */,
+			);
+			path = ConfigBuilder;
+			sourceTree = "<group>";
+		};
+		E790659B94611F633E00172D /* ClevVPNKit */ = {
+			isa = PBXGroup;
+			children = (
+				0F6FFD2C99D971C0149E8361 /* Localizable.xcstrings */,
+				3FA68154D234F09F9E2E7074 /* PingService.swift */,
+				5EC8DACEEC82A31C34E669F4 /* VPNManager.swift */,
+				D9C805320334DCE4AAA653D8 /* ConfigBuilder */,
+				5C66E8FCF2C69AF71B683BD2 /* Models */,
+				7AE1A157F761FAA8F83535DA /* Storage */,
+				F5F1E1114A430C93D1020B9F /* Subscription */,
+			);
+			path = ClevVPNKit;
+			sourceTree = "<group>";
+		};
+		E89895C54C03DCF4E39EA640 /* ClevVPN */ = {
+			isa = PBXGroup;
+			children = (
+				56702A1E36E76A47F4F7E25C /* AppState.swift */,
+				6371A8F1E1F1E91E37692ACB /* ClevVPN.entitlements */,
+				500AA75CC73063C92FEAD916 /* ClevVPNApp.swift */,
+				C2D493EEB09AAC53AE1A17D3 /* Info.plist */,
+				2F6332DD54605C2CE4818F01 /* LibboxPingEngine.swift */,
+				4DF77D938CB9F07DFD8A6311 /* Resources */,
+				71D1A59A22E87DE07932B78F /* Theme */,
+				21E01D76DDDA3A049964B092 /* Views */,
+			);
+			path = ClevVPN;
+			sourceTree = "<group>";
+		};
+		EFA8A20D308E8DA300FDEBF3 /* PacketTunnel */ = {
+			isa = PBXGroup;
+			children = (
+				E84FA0CD2D80B6FD71BE7547 /* ExtensionPlatformInterface.swift */,
+				B8BFAB63BC65A8F7E91DD0E7 /* Info.plist */,
+				57D4DD69B864695CB1FA92EA /* PacketTunnel.entitlements */,
+				9A4B9BFC43FC3B2658C53603 /* PacketTunnelProvider.swift */,
+			);
+			path = PacketTunnel;
+			sourceTree = "<group>";
+		};
+		F5F1E1114A430C93D1020B9F /* Subscription */ = {
+			isa = PBXGroup;
+			children = (
+				8AAB671816CE74C276BB016D /* ShareLinkParser.swift */,
+				C6FDA0C67AA135B0A7E02A38 /* SubscriptionClient.swift */,
+				6321E06F17AE3E0BFE6846C3 /* XrayConfigParser.swift */,
+			);
+			path = Subscription;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25684EBD80E7B41430F2C4A4 /* ClevVPNKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E1E3B1FCFFEAAB3239E337A /* Build configuration list for PBXNativeTarget "ClevVPNKit" */;
+			buildPhases = (
+				BB4B2C364086971DF20EDFE1 /* Sources */,
+				B0D082AF0E8B2B39483E6C02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClevVPNKit;
+			packageProductDependencies = (
+			);
+			productName = ClevVPNKit;
+			productReference = 55BEB160C2F6661DDC855020 /* ClevVPNKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		273DE14089D5250D07AEC586 /* PacketTunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D2ACC0D1B0D408C19C5F2DC /* Build configuration list for PBXNativeTarget "PacketTunnel" */;
+			buildPhases = (
+				C9D0E1F2A3B4C5D6E7F8091A /* Ensure Libbox */,
+				1829B9E79E17EBCA945907E6 /* Sources */,
+				778C2307D015DAB0EE549AB8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCEDFA99494D747F23C99F57 /* PBXTargetDependency */,
+			);
+			name = PacketTunnel;
+			packageProductDependencies = (
+			);
+			productName = PacketTunnel;
+			productReference = 2F704E9B42DF992CF4670D7E /* PacketTunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		3867CC0545E385D162E39783 /* ClevVPNMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD8CDE9597029EB19339F699 /* Build configuration list for PBXNativeTarget "ClevVPNMac" */;
+			buildPhases = (
+				37BF4A88ABA3A70961B8FDC9 /* Sources */,
+				22ABE3ED71EE1A291CA00C8A /* Resources */,
+				0A3FC71668E799B5778F9D83 /* Frameworks */,
+				1F76E50A5469650B863CE04F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D622AD96F4320790081BBEB3 /* PBXTargetDependency */,
+			);
+			name = ClevVPNMac;
+			packageProductDependencies = (
+			);
+			productName = ClevVPNMac;
+			productReference = 694F4658D1B201D1132EA8FA /* ClevVPNMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5D280E4E1525F88E676F4580 /* ClevVPNPreview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C1084FE81FD851F7EB1A70C /* Build configuration list for PBXNativeTarget "ClevVPNPreview" */;
+			buildPhases = (
+				D979A7AF94788B92B6E77324 /* Sources */,
+				E2627C4BAD66F5EEDB655D34 /* Resources */,
+				9B60C191724A51E0EAD7EB9C /* Frameworks */,
+				B830855EABF954702D6318B9 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBBAAEAA7E72B44CD50C2229 /* PBXTargetDependency */,
+			);
+			name = ClevVPNPreview;
+			packageProductDependencies = (
+			);
+			productName = ClevVPNPreview;
+			productReference = FCFB391EE2FCD684B0CDB868 /* ClevVPNPreview.app */;
+			productType = "com.apple.product-type.application";
+		};
+		651E557179B3BC650A6A203F /* ClevVPNKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1935E4D7017E9C4F7BB09288 /* Build configuration list for PBXNativeTarget "ClevVPNKitTests" */;
+			buildPhases = (
+				228315084F5D0C29209F17CC /* Sources */,
+				97039939B9B78BD261413F79 /* Frameworks */,
+				BC177BD89BDA21A52C446A56 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD6C72B6F62A96D7FBEC4C1B /* PBXTargetDependency */,
+			);
+			name = ClevVPNKitTests;
+			packageProductDependencies = (
+			);
+			productName = ClevVPNKitTests;
+			productReference = 38090BEED65D1499B00C40C7 /* ClevVPNKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		801B9E9E2AD1B21C2F3A5E1C /* ClevVPNKitMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 973591FBFB427A654F45617B /* Build configuration list for PBXNativeTarget "ClevVPNKitMac" */;
+			buildPhases = (
+				76DE2BCE66570836653F66A1 /* Sources */,
+				798ABA4F0A1E11D3BE6D7C13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClevVPNKitMac;
+			packageProductDependencies = (
+			);
+			productName = ClevVPNKitMac;
+			productReference = A4B74E4B0C93E01433A1990E /* ClevVPNKitMac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		98AAF36820052EB7B5722704 /* ClevVPN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA4F47AE758AFD9188578EED /* Build configuration list for PBXNativeTarget "ClevVPN" */;
+			buildPhases = (
+				B8C9D0E1F2A3B4C5D6E7F809 /* Ensure Libbox */,
+				95894FF5B62A41EE413BCC03 /* Sources */,
+				93820C166F8D63CECA89C9B9 /* Resources */,
+				537F7900B032299F0660CA10 /* Frameworks */,
+				33C3EAD9D5A15E42476EA72B /* Embed Foundation Extensions */,
+				BF651AA2EA55C69F9B5BDABD /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B36EE4AE81069B72C3858E2 /* PBXTargetDependency */,
+				48CC9579CF92EB4F804E8646 /* PBXTargetDependency */,
+			);
+			name = ClevVPN;
+			packageProductDependencies = (
+			);
+			productName = ClevVPN;
+			productReference = 6ABB5E1C92BDDE23AE06B169 /* ClevVPN.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F93E64A46DE96AB26B49922 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					25684EBD80E7B41430F2C4A4 = {
+						ProvisioningStyle = Automatic;
+					};
+					273DE14089D5250D07AEC586 = {
+						ProvisioningStyle = Automatic;
+					};
+					3867CC0545E385D162E39783 = {
+						ProvisioningStyle = Manual;
+					};
+					5D280E4E1525F88E676F4580 = {
+						DevelopmentTeam = BZYP3V6365;
+						ProvisioningStyle = Automatic;
+					};
+					651E557179B3BC650A6A203F = {
+						ProvisioningStyle = Automatic;
+					};
+					801B9E9E2AD1B21C2F3A5E1C = {
+						ProvisioningStyle = Manual;
+					};
+					98AAF36820052EB7B5722704 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1BBACB3E578C471AB1EFF3CE /* Build configuration list for PBXProject "ClevVPN" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				ru,
+			);
+			mainGroup = A20BCF5391B8C77772331938;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3835697FE9EAFC15EBA4008E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98AAF36820052EB7B5722704 /* ClevVPN */,
+				25684EBD80E7B41430F2C4A4 /* ClevVPNKit */,
+				801B9E9E2AD1B21C2F3A5E1C /* ClevVPNKitMac */,
+				651E557179B3BC650A6A203F /* ClevVPNKitTests */,
+				3867CC0545E385D162E39783 /* ClevVPNMac */,
+				5D280E4E1525F88E676F4580 /* ClevVPNPreview */,
+				273DE14089D5250D07AEC586 /* PacketTunnel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22ABE3ED71EE1A291CA00C8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66201A340C737823EA5186AD /* Assets.xcassets in Resources */,
+				182E26C90B55A5A0344801AE /* Localizable.xcstrings in Resources */,
+				42D28E2191897B8B5A2EEF28 /* PreviewSubscription.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		798ABA4F0A1E11D3BE6D7C13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3D072B86B8C4363F5001E8C /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93820C166F8D63CECA89C9B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6679B5787FA35A07C66E628D /* Assets.xcassets in Resources */,
+				495B3F41357D6C4C94563E46 /* Localizable.xcstrings in Resources */,
+				000ED513E494E12B94ACA354 /* PreviewSubscription.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0D082AF0E8B2B39483E6C02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2F832BCED729D70B8A6DEBE /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2627C4BAD66F5EEDB655D34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B977620CD26D7317CEFC2D1 /* Assets.xcassets in Resources */,
+				CABEA484F2029932B88EE295 /* Localizable.xcstrings in Resources */,
+				C9BC3B75B270EDE1B0D6504B /* PreviewSubscription.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+
+/* Begin PBXShellScriptBuildPhase section */
+		B8C9D0E1F2A3B4C5D6E7F809 /* Ensure Libbox */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Ensure Libbox";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/Frameworks/Libbox.xcframework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\ncd "${SRCROOT}"\nchmod +x scripts/ensure-libbox.sh scripts/build-libbox.sh\n./scripts/ensure-libbox.sh\n";
+		};
+		C9D0E1F2A3B4C5D6E7F8091A /* Ensure Libbox */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Ensure Libbox";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/Frameworks/Libbox.xcframework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\ncd "${SRCROOT}"\nchmod +x scripts/ensure-libbox.sh scripts/build-libbox.sh\n./scripts/ensure-libbox.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1829B9E79E17EBCA945907E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C3FD7B6B2300C368498EEA5 /* ExtensionPlatformInterface.swift in Sources */,
+				7FB7C6A1F703CBB9F175A6B0 /* PacketTunnelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		228315084F5D0C29209F17CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6067A555F77332CD66DAB977 /* ConfigValidationTests.swift in Sources */,
+				4C10A462EC24675790A198DC /* ShareLinkParserTests.swift in Sources */,
+				FB890ACF7CF680040230915A /* SingBoxConfigBuilderTests.swift in Sources */,
+				7B5B006548820E6B8B1C8964 /* XrayConfigParserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37BF4A88ABA3A70961B8FDC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1389D6FD3FE0E1302A7D4432 /* ClevLogo.swift in Sources */,
+				A252234E1F0CE5DFEC36EAA0 /* ClevVPNMacApp.swift in Sources */,
+				A4429016D0144F5F168F2D56 /* Components.swift in Sources */,
+				CBBA61B60F752AB29D7875AD /* ConflictDetector.swift in Sources */,
+				9F31FDD20380D72722464936 /* ConnectionEffects.swift in Sources */,
+				46C2F5FD5A4E07F10BFB3A75 /* KillSwitch.swift in Sources */,
+				57B2CCFD6E82D69AF3F10410 /* MacAppsView.swift in Sources */,
+				A4ED4A6DF33669824D19EA06 /* MacMainView.swift in Sources */,
+				7AC22B7453AC5F29FF981CC1 /* MacPingEngine.swift in Sources */,
+				2F329DD60AD308E8AF814F3A /* MacRulesView.swift in Sources */,
+				26CEE4F3A2D1EF0625220238 /* MacState.swift in Sources */,
+				F7018D065DDC1F03D3B5DF09 /* MacTunnel.swift in Sources */,
+				EC791B65BD29B030835B673E /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76DE2BCE66570836653F66A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7F0C8F48EED5E0716578E7C /* AppRouting.swift in Sources */,
+				D4329EB1DDF3BC7731A10D2C /* KeychainStore.swift in Sources */,
+				7C6D6D4C2FE71A28C79688E2 /* PingService.swift in Sources */,
+				D6E319A0EAD460B47C121733 /* Routing.swift in Sources */,
+				F13A1BAC4AF7F27E43ED6A74 /* Server.swift in Sources */,
+				C4159FB53A4E6E03799821C7 /* ServerCategory.swift in Sources */,
+				D8893AFF7B6F852117A1664A /* ShareLinkParser.swift in Sources */,
+				57C503823202B049FC3A43F4 /* SharedStore.swift in Sources */,
+				5959F4F0D9C0FED6521CC83A /* SingBoxConfigBuilder.swift in Sources */,
+				02DC67F1853E55AD21E0B5FF /* Subscription.swift in Sources */,
+				5A732DB474E3A996C46BEB02 /* SubscriptionClient.swift in Sources */,
+				3ACD08B5FF23B666A7664E41 /* VPNManager.swift in Sources */,
+				DEAD68308FA866C1048BEA9B /* XrayConfigParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95894FF5B62A41EE413BCC03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5E6A9C42491A0A2360D19B /* ActivationView.swift in Sources */,
+				6BA6CB5316BF611037375217 /* AppState.swift in Sources */,
+				B9E4F3D2C1A0B99887766555 /* AppsTabView.swift in Sources */,
+				4C1E20ACD2CA7AE56A14A43A /* ClevLogo.swift in Sources */,
+				57E00024085947723386777C /* ClevVPNApp.swift in Sources */,
+				5BDA512BFFB69C31EC8B79C4 /* Components.swift in Sources */,
+				A59D64A99823BA466795BB9A /* ConnectView.swift in Sources */,
+				5B884EFB22546A4C97ECD865 /* ConnectionEffects.swift in Sources */,
+				4880CC01141B53780D4C378F /* LibboxPingEngine.swift in Sources */,
+				20CAF031F4FBB60F2ACBA8B3 /* RoutingView.swift in Sources */,
+				945088CA482985919BC2946F /* SettingsSheet.swift in Sources */,
+				BAF7CE17CFB7237C7EDFD85E /* SettingsView.swift in Sources */,
+				40A297159296BD06D7C2B496 /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB4B2C364086971DF20EDFE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F327370017694654FCF9563A /* AppRouting.swift in Sources */,
+				C1700B6E1DC2FDAAEF3C9CF6 /* KeychainStore.swift in Sources */,
+				4DD8BD189E652CFAE992FC13 /* PingService.swift in Sources */,
+				D1E3113308DCD8174B237AFA /* Routing.swift in Sources */,
+				30EDA9ACE3F17F95F0138255 /* Server.swift in Sources */,
+				9619E28607FFB5E5B50EA64F /* ServerCategory.swift in Sources */,
+				BC45D0F1EF43A41F721FC761 /* ShareLinkParser.swift in Sources */,
+				1E582EE934EE15A1A4B5CE39 /* SharedStore.swift in Sources */,
+				37B05121F57A9F20854D7B0B /* SingBoxConfigBuilder.swift in Sources */,
+				4C36E5CB11A0CFB683949582 /* Subscription.swift in Sources */,
+				46ED8C124F4C76492C46A5A2 /* SubscriptionClient.swift in Sources */,
+				CFC65ED4A97351D3DD5137EA /* VPNManager.swift in Sources */,
+				C79D411552664DEAA4969C12 /* XrayConfigParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D979A7AF94788B92B6E77324 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FA96FD5814C52B0B041CDC8 /* ActivationView.swift in Sources */,
+				0CB8AC2AD57EF2064FE29C7F /* AppState.swift in Sources */,
+				A8F3E2D1C0B9A88776655444 /* AppsTabView.swift in Sources */,
+				C9BB30B9CB984CF7F5138110 /* ClevLogo.swift in Sources */,
+				06D9A44BAF18AB737916BF64 /* ClevVPNApp.swift in Sources */,
+				A41F3A4CDB3FFE9EB0709500 /* Components.swift in Sources */,
+				7B035D1F840B5B0494DAF345 /* ConnectView.swift in Sources */,
+				6A3A3A2941CB779432C8F330 /* ConnectionEffects.swift in Sources */,
+				0B99C1757CC9D590B842B793 /* LibboxPingEngine.swift in Sources */,
+				E3D77E8ED542AC8E639B9535 /* RoutingView.swift in Sources */,
+				E4BD4B7873848BDF5586988F /* SettingsSheet.swift in Sources */,
+				C253D076A68069B0EE144433 /* SettingsView.swift in Sources */,
+				DDC712C327611EE36C531BFC /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B36EE4AE81069B72C3858E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25684EBD80E7B41430F2C4A4 /* ClevVPNKit */;
+			targetProxy = 00001EDBEE8B8C41FA922778 /* PBXContainerItemProxy */;
+		};
+		48CC9579CF92EB4F804E8646 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 273DE14089D5250D07AEC586 /* PacketTunnel */;
+			targetProxy = A35B27EB5C0D8F861D8F4324 /* PBXContainerItemProxy */;
+		};
+		CCEDFA99494D747F23C99F57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25684EBD80E7B41430F2C4A4 /* ClevVPNKit */;
+			targetProxy = 60B50F5DF9FDBB745D75D985 /* PBXContainerItemProxy */;
+		};
+		CD6C72B6F62A96D7FBEC4C1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25684EBD80E7B41430F2C4A4 /* ClevVPNKit */;
+			targetProxy = 15865F0EC0ABDF19B1167856 /* PBXContainerItemProxy */;
+		};
+		D622AD96F4320790081BBEB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 801B9E9E2AD1B21C2F3A5E1C /* ClevVPNKitMac */;
+			targetProxy = 88B23D5836C6C179BA114645 /* PBXContainerItemProxy */;
+		};
+		DBBAAEAA7E72B44CD50C2229 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25684EBD80E7B41430F2C4A4 /* ClevVPNKit */;
+			targetProxy = F268D5492691D87D25317C84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0D14A83C766486ADF04017FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.clevvpn.ClevVPNKitTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1A69E7912D12E58E004E3955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.clevvpn.ios.kit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		32747E5688D811641E978AEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = BZYP3V6365;
+				INFOPLIST_FILE = ClevVPNPreview/Info.plist;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.clevvpn.ios.preview;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3BA4964756CEE76FEFCBDE2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = BZYP3V6365;
+				INFOPLIST_FILE = ClevVPNPreview/Info.plist;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.clevvpn.ios.preview;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4106BB9FE9666CD8A5E99F84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.clevvpn.ios.kit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		4DD683F4ECF654048E0E25A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clevvpn.ios.tunnel;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6056716B70378D24B411B2C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_STYLE[sdk=iphonesimulator*]" = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				"DEVELOPMENT_TEAM[sdk=iphonesimulator*]" = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphonesimulator*]" = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		71A92C39A088B8E4E838E438 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.clevvpn.mac.kit;
+				PRODUCT_NAME = ClevVPNKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		A0439DA02F4D37089C7F0092 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconMac;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = ClevVPNMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.clevvpn.mac;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B95FE310E5FF7FB8CB2FDF23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconMac;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = ClevVPNMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.clevvpn.mac;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BA4DCDA7817BE489A170507F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.clevvpn.ClevVPNKitTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2283706145D8D14485BAABC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ClevVPN/ClevVPN.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = ClevVPN/Info.plist;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.clevvpn.ios;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E2AC87989558F3C7C1FDB3B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.clevvpn.mac.kit;
+				PRODUCT_NAME = ClevVPNKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		E4154DEF04B89A975E099B59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clevvpn.ios.tunnel;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F4A55750AA41AB5E27827F3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ClevVPN/ClevVPN.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = ClevVPN/Info.plist;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.clevvpn.ios;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F5FD944EC505B0E1288CDB87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_STYLE[sdk=iphonesimulator*]" = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				"DEVELOPMENT_TEAM[sdk=iphonesimulator*]" = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphonesimulator*]" = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1935E4D7017E9C4F7BB09288 /* Build configuration list for PBXNativeTarget "ClevVPNKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA4DCDA7817BE489A170507F /* Debug */,
+				0D14A83C766486ADF04017FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1BBACB3E578C471AB1EFF3CE /* Build configuration list for PBXProject "ClevVPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6056716B70378D24B411B2C3 /* Debug */,
+				F5FD944EC505B0E1288CDB87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6C1084FE81FD851F7EB1A70C /* Build configuration list for PBXNativeTarget "ClevVPNPreview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BA4964756CEE76FEFCBDE2F /* Debug */,
+				32747E5688D811641E978AEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6D2ACC0D1B0D408C19C5F2DC /* Build configuration list for PBXNativeTarget "PacketTunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DD683F4ECF654048E0E25A4 /* Debug */,
+				E4154DEF04B89A975E099B59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6E1E3B1FCFFEAAB3239E337A /* Build configuration list for PBXNativeTarget "ClevVPNKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A69E7912D12E58E004E3955 /* Debug */,
+				4106BB9FE9666CD8A5E99F84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		973591FBFB427A654F45617B /* Build configuration list for PBXNativeTarget "ClevVPNKitMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71A92C39A088B8E4E838E438 /* Debug */,
+				E2AC87989558F3C7C1FDB3B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BD8CDE9597029EB19339F699 /* Build configuration list for PBXNativeTarget "ClevVPNMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B95FE310E5FF7FB8CB2FDF23 /* Debug */,
+				A0439DA02F4D37089C7F0092 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CA4F47AE758AFD9188578EED /* Build configuration list for PBXNativeTarget "ClevVPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4A55750AA41AB5E27827F3F /* Debug */,
+				D2283706145D8D14485BAABC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F93E64A46DE96AB26B49922 /* Project object */;
+}
