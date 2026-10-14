@@ -444,6 +444,16 @@
         }
       }
     },
+    "Subscription updated": {
+      "localizations": {
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подписка обновлена"
+          }
+        }
+      }
+    },
     "No servers here yet": {
       "localizations": {
         "ru": {
