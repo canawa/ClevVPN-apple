@@ -768,7 +768,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -euo pipefail\ncd "${SRCROOT}"\nchmod +x scripts/ensure-libbox.sh scripts/build-libbox.sh\n./scripts/ensure-libbox.sh\n";
+			shellScript = "set -euo pipefail\ncd \"${SRCROOT}\"\nchmod +x scripts/ensure-libbox.sh scripts/build-libbox.sh\n./scripts/ensure-libbox.sh\n";
 		};
 		C9D0E1F2A3B4C5D6E7F8091A /* Ensure Libbox */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -788,7 +788,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -euo pipefail\ncd "${SRCROOT}"\nchmod +x scripts/ensure-libbox.sh scripts/build-libbox.sh\n./scripts/ensure-libbox.sh\n";
+			shellScript = "set -euo pipefail\ncd \"${SRCROOT}\"\nchmod +x scripts/ensure-libbox.sh scripts/build-libbox.sh\n./scripts/ensure-libbox.sh\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
