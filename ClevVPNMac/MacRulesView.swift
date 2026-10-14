@@ -21,7 +21,7 @@ struct MacRulesView: View {
                 }
                 .pickerStyle(.radioGroup)
                 .labelsHidden()
-                .onChange(of: state.routingMode) { _ in
+                .onChangeCompat(of: state.routingMode) { _ in
                     Task { await state.reconnectIfConnected() }
                 }
 

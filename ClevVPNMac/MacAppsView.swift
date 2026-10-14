@@ -55,7 +55,7 @@ struct MacAppsView: View {
             }
         }
         .task { await loadApps() }
-        .onChange(of: state.appRoutingMode) { _ in
+        .onChangeCompat(of: state.appRoutingMode) { _ in
             Task { await state.reconnectIfConnected() }
         }
     }

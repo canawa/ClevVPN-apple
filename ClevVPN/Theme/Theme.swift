@@ -51,4 +51,15 @@ struct CardBackground: ViewModifier {
 
 extension View {
     func card() -> some View { modifier(CardBackground()) }
+
+    /// `onChange` без двухпараметровой формы (macOS 14+ / iOS 17+),
+    /// чтобы код собирался и работал при deployment target macOS 13 / iOS 16.
+    @ViewBuilder
+    func onChangeCompat<V: Equatable>(of value: V, perform action: @escaping (V) -> Void) -> some View {
+        if #available(macOS 14.0, iOS 17.0, *) {
+            self.onChange(of: value) { _, newValue in action(newValue) }
+        } else {
+            self.onChange(of: value, perform: action)
+        }
+    }
 }

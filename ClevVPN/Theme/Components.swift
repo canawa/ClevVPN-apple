@@ -356,7 +356,7 @@ struct ConnectButton: View {
             .contentShape(Circle())
         }
         .buttonStyle(PressableButtonStyle())
-        .onChange(of: isOn) { on in
+        .onChangeCompat(of: isOn) { on in
             if on {
                 // Комета проносится ~2.5 оборота за 0.5с, одновременно
                 // загорается ободок — ощущение скорости.

@@ -41,7 +41,7 @@ struct AppsTabView: View {
                 Spacer()
             }
         }
-        .onChange(of: state.appRoutingMode) { _ in
+        .onChangeCompat(of: state.appRoutingMode) { _ in
             Task { await state.reconnectIfConnected() }
         }
     }

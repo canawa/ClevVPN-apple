@@ -19,7 +19,7 @@ struct RulesTabView: View {
                     modeRadio(.global, title: "All traffic via VPN")
                     modeRadio(.custom, title: "Custom rules")
                 }
-                .onChange(of: state.routingMode) { _ in
+                .onChangeCompat(of: state.routingMode) { _ in
                     Task { await state.reconnectIfConnected() }
                 }
 
