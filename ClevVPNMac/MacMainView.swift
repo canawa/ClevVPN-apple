@@ -332,7 +332,7 @@ struct MacHomeView: View {
         .sheet(isPresented: $showSettings) {
             MacSettingsSheet().environmentObject(state)
         }
-        .onChange(of: state.settingsDismissTick) { _, _ in
+        .onChange(of: state.settingsDismissTick) { _ in
             showSettings = false
         }
     }
