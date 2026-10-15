@@ -3,14 +3,6 @@ import SwiftUI
 import Combine
 import ClevVPNKit
 
-/// Всплывающее уведомление сверху окна.
-struct ToastMessage: Equatable, Identifiable {
-    enum Kind { case success, error }
-    let id = UUID()
-    let kind: Kind
-    let text: String
-}
-
 /// Состояние Mac-приложения: подписка, серверы, выбор, правила.
 @MainActor
 final class MacState: ObservableObject {

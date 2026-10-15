@@ -124,29 +124,6 @@ struct MacMineEditor: View {
     }
 }
 
-/// Всплывающее уведомление сверху окна: зелёное (успех) / красное (проблема).
-struct ToastView: View {
-    let toast: ToastMessage
-
-    var body: some View {
-        HStack(spacing: 8) {
-            Image(systemName: toast.kind == .success ? "checkmark.circle.fill" : "xmark.octagon.fill")
-                .foregroundColor(toast.kind == .success ? Theme.green : Theme.red)
-            Text(toast.text)
-                .font(.caption.weight(.medium))
-                .foregroundColor(Theme.textPrimary)
-        }
-        .padding(.horizontal, 14)
-        .padding(.vertical, 10)
-        .background(Theme.surfaceLight, in: Capsule())
-        .overlay(
-            Capsule().strokeBorder(
-                (toast.kind == .success ? Theme.green : Theme.red).opacity(0.5), lineWidth: 1)
-        )
-        .shadow(color: .black.opacity(0.3), radius: 8, y: 3)
-    }
-}
-
 /// Смена языка на macOS — применяется сразу, без перезапуска.
 struct MacLanguageView: View {
     @AppStorage("appLanguage") private var appLanguage = "system"

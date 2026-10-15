@@ -22,8 +22,20 @@ struct ConnectView: View {
         mainStack
             .background(Theme.background.ignoresSafeArea())
             .background(StatusGlow(status: glowStatus).ignoresSafeArea())
+            .overlay(alignment: .top) {
+                if let toast = state.toast {
+                    ToastView(toast: toast)
+                        .padding(.top, 8)
+                        .transition(.move(edge: .top).combined(with: .opacity))
+                        .zIndex(1)
+                }
+            }
+            .animation(.spring(response: 0.35, dampingFraction: 0.8), value: state.toast)
             .sheet(isPresented: $showSettings) {
                 SettingsSheet().environmentObject(state)
+            }
+            .onChangeCompat(of: state.settingsDismissTick) { _ in
+                showSettings = false
             }
     }
 

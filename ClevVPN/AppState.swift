@@ -9,6 +9,11 @@ final class AppState: ObservableObject {
     @Published var subscription: ClevVPNKit.Subscription?
     @Published var isLoading = false
     @Published var errorMessage: String?
+    /// Toast на главном экране (не внутри Settings).
+    @Published var toast: ToastMessage?
+    /// Инкремент → ConnectView закрывает Settings sheet.
+    @Published private(set) var settingsDismissTick: UInt = 0
+    private var toastDismissTask: Task<Void, Never>?
 
     @Published var selectedServerID: String? {
         didSet { SharedStore.selectedServerID = selectedServerID }
@@ -149,7 +154,10 @@ final class AppState: ObservableObject {
     func refreshSubscription() async {
         guard let url = KeychainStore.subscriptionURL else { return }
         #if DEBUG
-        if url == "demo" { return }
+        if url == "demo" {
+            showToast(.success, text: String(localized: "Subscription updated", bundle: .main))
+            return
+        }
         #endif
         isLoading = true
         defer { isLoading = false }
@@ -158,9 +166,22 @@ final class AppState: ObservableObject {
             subscription = sub
             SharedStore.cachedSubscription = sub
             errorMessage = nil
+            showToast(.success, text: String(localized: "Subscription updated", bundle: .main))
         } catch {
-            // Кэш остаётся рабочим — просто показываем, что обновить не вышло
-            errorMessage = error.localizedDescription
+            // Кэш остаётся рабочим — toast на главном экране, не в Settings.
+            errorMessage = nil
+            showToast(.error, text: error.localizedDescription)
+        }
+    }
+
+    func showToast(_ kind: ToastMessage.Kind, text: String) {
+        toastDismissTask?.cancel()
+        settingsDismissTick &+= 1
+        toast = ToastMessage(kind: kind, text: text)
+        toastDismissTask = Task { [weak self] in
+            try? await Task.sleep(nanoseconds: 2_800_000_000)
+            guard !Task.isCancelled else { return }
+            await MainActor.run { self?.toast = nil }
         }
     }
 

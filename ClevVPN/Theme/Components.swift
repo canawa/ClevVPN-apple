@@ -797,6 +797,36 @@ struct AnnounceText: View {
 /// Windows / Android TV (`SubscriptionSettingsView`): карточка с названием,
 /// трафиком и датой и двумя действиями; под ней «Купить в боте» и «Поддержка»,
 /// на десктопе — «Выйти из приложения»; внизу логотип.
+/// Всплывающее уведомление сверху главного экрана: зелёное (успех) / красное (ошибка).
+struct ToastMessage: Equatable, Identifiable {
+    enum Kind { case success, error }
+    let id = UUID()
+    let kind: Kind
+    let text: String
+}
+
+struct ToastView: View {
+    let toast: ToastMessage
+
+    var body: some View {
+        HStack(spacing: 8) {
+            Image(systemName: toast.kind == .success ? "checkmark.circle.fill" : "xmark.octagon.fill")
+                .foregroundColor(toast.kind == .success ? Theme.green : Theme.red)
+            Text(toast.text)
+                .font(.caption.weight(.medium))
+                .foregroundColor(Theme.textPrimary)
+        }
+        .padding(.horizontal, 14)
+        .padding(.vertical, 10)
+        .background(Theme.surfaceLight, in: Capsule())
+        .overlay(
+            Capsule().strokeBorder(
+                (toast.kind == .success ? Theme.green : Theme.red).opacity(0.5), lineWidth: 1)
+        )
+        .shadow(color: .black.opacity(0.3), radius: 8, y: 3)
+    }
+}
+
 struct SubscriptionSettingsCard: View {
     let title: String?
     let info: SubscriptionUserInfo?
