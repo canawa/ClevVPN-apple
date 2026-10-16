@@ -869,10 +869,14 @@ struct SubscriptionSettingsCard: View {
                         }
                         HStack(spacing: 10) {
                             if let url = Self.botURL {
-                                linkButton(Text("Buy in bot"), url: url)
+                                linkButton(icon: "cart.fill",
+                                           title: Text("Buy in bot"),
+                                           url: url)
                             }
                             if let url = supportLink {
-                                linkButton(Text("Support"), url: url)
+                                linkButton(icon: "headphones",
+                                           title: Text("Support"),
+                                           url: url)
                             }
                         }
                     }
@@ -1002,14 +1006,23 @@ struct SubscriptionSettingsCard: View {
         .disabled(isLoading)
     }
 
-    private func linkButton(_ title: Text, url: URL) -> some View {
+    private func linkButton(icon: String, title: Text, url: URL) -> some View {
         Link(destination: url) {
-            title
-                .font(.system(size: 13, weight: .bold))
-                .foregroundColor(Theme.textPrimary)
-                .frame(maxWidth: .infinity, minHeight: 44)
-                .background(outlinedShape)
-                .contentShape(Rectangle())
+            HStack(spacing: 6) {
+                Image(systemName: icon)
+                    .font(.system(size: 14, weight: .semibold))
+                    .foregroundColor(Theme.yellow)
+                title
+                    .font(.system(size: 13, weight: .bold))
+                    .foregroundColor(Theme.textPrimary)
+                    .lineLimit(2)
+                    .minimumScaleFactor(0.85)
+                    .multilineTextAlignment(.center)
+            }
+            .padding(.horizontal, 8)
+            .frame(maxWidth: .infinity, minHeight: 44)
+            .background(outlinedShape)
+            .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
     }
