@@ -918,20 +918,22 @@ struct SubscriptionSettingsCard: View {
         }
     }
 
-    /// Аватар и название подписки — по центру.
+    /// Аватар и название подписки — по центру (иконка 22×22, как Windows/Android).
     private var titleRow: some View {
-        HStack(spacing: 8) {
-            Image(systemName: "person")
-                .font(.system(size: 12))
+        HStack(alignment: .center, spacing: 8) {
+            Image(systemName: "person.circle")
+                .font(.system(size: 22, weight: .regular))
                 .foregroundColor(Theme.textPrimary)
-                .frame(width: 22, height: 22)
-                .overlay(Circle().strokeBorder(Theme.textSecondary.opacity(0.65), lineWidth: 1))
+                .frame(width: 22, height: 22, alignment: .center)
+                .accessibilityHidden(true)
             Text(verbatim: displayTitle)
                 .font(.system(size: 16, weight: .bold))
                 .foregroundColor(Theme.textPrimary)
                 .lineLimit(2)
+                .multilineTextAlignment(.leading)
+                .fixedSize(horizontal: false, vertical: true)
         }
-        .frame(maxWidth: .infinity)
+        .frame(maxWidth: .infinity, alignment: .center)
     }
 
     private var displayTitle: String {
