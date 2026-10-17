@@ -99,6 +99,9 @@
 		E3D77E8ED542AC8E639B9535 /* RoutingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2432CD15878BF9A7A2442B20 /* RoutingView.swift */; };
 		E4BD4B7873848BDF5586988F /* SettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4FD8BE4744CAC15419E329 /* SettingsSheet.swift */; };
 		EC791B65BD29B030835B673E /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA476C8D6A1B7A0540D7291 /* Theme.swift */; };
+		F8E2D1C0B9A8475638291A4F /* SubscriptionSettingsIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D1C0B9A8475638291A4F3E /* SubscriptionSettingsIcons.swift */; };
+		F9F3E2D1C0B95867493A2B5C /* SubscriptionSettingsIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D1C0B9A8475638291A4F3E /* SubscriptionSettingsIcons.swift */; };
+		FA04F3E2D1C0A697584B3C6D /* SubscriptionSettingsIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D1C0B9A8475638291A4F3E /* SubscriptionSettingsIcons.swift */; };
 		F13A1BAC4AF7F27E43ED6A74 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD58A22DE4097B403708B69 /* Server.swift */; };
 		F327370017694654FCF9563A /* AppRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C588DCD68D0C57E254A2223A /* AppRouting.swift */; };
 		F7018D065DDC1F03D3B5DF09 /* MacTunnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72A6B8A17BA74B661912B50 /* MacTunnel.swift */; };
@@ -264,6 +267,7 @@
 		D25BFB59DE61A7992DC25AA1 /* ConflictDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConflictDetector.swift; sourceTree = "<group>"; };
 		E815BA896F022F59FBCB54A8 /* MacAppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacAppsView.swift; sourceTree = "<group>"; };
 		E84FA0CD2D80B6FD71BE7547 /* ExtensionPlatformInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionPlatformInterface.swift; sourceTree = "<group>"; };
+		E7D1C0B9A8475638291A4F3E /* SubscriptionSettingsIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionSettingsIcons.swift; sourceTree = "<group>"; };
 		F548DAF2380DFBF0FF837BA4 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
 		F77EB3DE14CD434569C0A399 /* KillSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KillSwitch.swift; sourceTree = "<group>"; };
 		FC4FD8BE4744CAC15419E329 /* SettingsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSheet.swift; sourceTree = "<group>"; };
@@ -399,6 +403,7 @@
 				FD347483DB3107AFFB38D4C9 /* ClevLogo.swift */,
 				F548DAF2380DFBF0FF837BA4 /* Components.swift */,
 				C241AE878EB7D698FC91E46A /* ConnectionEffects.swift */,
+				E7D1C0B9A8475638291A4F3E /* SubscriptionSettingsIcons.swift */,
 				4DA476C8D6A1B7A0540D7291 /* Theme.swift */,
 			);
 			path = Theme;
@@ -829,6 +834,7 @@
 				2F329DD60AD308E8AF814F3A /* MacRulesView.swift in Sources */,
 				26CEE4F3A2D1EF0625220238 /* MacState.swift in Sources */,
 				F7018D065DDC1F03D3B5DF09 /* MacTunnel.swift in Sources */,
+				F8E2D1C0B9A8475638291A4F /* SubscriptionSettingsIcons.swift in Sources */,
 				EC791B65BD29B030835B673E /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -869,6 +875,7 @@
 				20CAF031F4FBB60F2ACBA8B3 /* RoutingView.swift in Sources */,
 				945088CA482985919BC2946F /* SettingsSheet.swift in Sources */,
 				BAF7CE17CFB7237C7EDFD85E /* SettingsView.swift in Sources */,
+				F9F3E2D1C0B95867493A2B5C /* SubscriptionSettingsIcons.swift in Sources */,
 				40A297159296BD06D7C2B496 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -909,6 +916,7 @@
 				E3D77E8ED542AC8E639B9535 /* RoutingView.swift in Sources */,
 				E4BD4B7873848BDF5586988F /* SettingsSheet.swift in Sources */,
 				C253D076A68069B0EE144433 /* SettingsView.swift in Sources */,
+				FA04F3E2D1C0A697584B3C6D /* SubscriptionSettingsIcons.swift in Sources */,
 				DDC712C327611EE36C531BFC /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
