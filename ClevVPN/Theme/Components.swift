@@ -858,23 +858,23 @@ struct SubscriptionSettingsCard: View {
                         // Все действия — одним блоком в карточке: обновить и
                         // удалить ключ, ниже бот и поддержка
                         HStack(spacing: 10) {
-                            actionButton(icon: "arrow.clockwise",
+                            actionButton(icon: SubscriptionSettingsIcons.Symbol.refresh,
                                          title: Text("Update subscription"),
                                          isLoading: isLoading,
                                          action: onRefresh)
-                            actionButton(icon: "rectangle.portrait.and.arrow.right",
+                            actionButton(icon: SubscriptionSettingsIcons.Symbol.signOut,
                                          title: Text("Remove key and sign out"),
                                          isLoading: false,
                                          action: onDelete)
                         }
                         HStack(spacing: 10) {
                             if let url = Self.botURL {
-                                linkButton(icon: "cart.fill",
+                                linkButton(icon: SubscriptionSettingsIcons.Symbol.buyInBot,
                                            title: Text("Buy in bot"),
                                            url: url)
                             }
                             if let url = supportLink {
-                                linkButton(icon: "headphones",
+                                linkButton(icon: SubscriptionSettingsIcons.Symbol.support,
                                            title: Text("Support"),
                                            url: url)
                             }
@@ -921,10 +921,12 @@ struct SubscriptionSettingsCard: View {
     /// Аватар и название подписки — по центру (иконка 22×22, как Windows/Android).
     private var titleRow: some View {
         HStack(alignment: .center, spacing: 8) {
-            Image(systemName: "person.circle")
-                .font(.system(size: 22, weight: .regular))
+            Image(systemName: SubscriptionSettingsIcons.Symbol.titleAvatar)
+                .font(.system(size: SubscriptionSettingsIcons.Size.titleAvatar, weight: .regular))
                 .foregroundColor(Theme.textPrimary)
-                .frame(width: 22, height: 22, alignment: .center)
+                .frame(width: SubscriptionSettingsIcons.Size.titleAvatar,
+                       height: SubscriptionSettingsIcons.Size.titleAvatar,
+                       alignment: .center)
                 .accessibilityHidden(true)
             Text(verbatim: displayTitle)
                 .font(.system(size: 16, weight: .bold))
@@ -950,8 +952,8 @@ struct SubscriptionSettingsCard: View {
             Spacer(minLength: 8)
             if let expires = info?.expiresAt {
                 HStack(spacing: 5) {
-                    Image(systemName: "calendar")
-                        .font(.system(size: 12))
+                    Image(systemName: SubscriptionSettingsIcons.Symbol.statsCalendar)
+                        .font(.system(size: SubscriptionSettingsIcons.Size.statsCalendar))
                     Text(expires, format: .dateTime.day().month(.abbreviated).year())
                         .font(.system(size: 12, weight: .bold))
                         .lineLimit(1)
@@ -989,7 +991,7 @@ struct SubscriptionSettingsCard: View {
                         .frame(width: 16, height: 16)
                 } else {
                     Image(systemName: icon)
-                        .font(.system(size: 14, weight: .semibold))
+                        .font(.system(size: SubscriptionSettingsIcons.Size.action, weight: .semibold))
                         .foregroundColor(Theme.yellow)
                 }
                 title
@@ -1012,7 +1014,7 @@ struct SubscriptionSettingsCard: View {
         Link(destination: url) {
             HStack(spacing: 6) {
                 Image(systemName: icon)
-                    .font(.system(size: 14, weight: .semibold))
+                    .font(.system(size: SubscriptionSettingsIcons.Size.action, weight: .semibold))
                     .foregroundColor(Theme.yellow)
                 title
                     .font(.system(size: 13, weight: .bold))

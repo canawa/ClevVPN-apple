@@ -1,0 +1,7 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+  <!-- SF Symbol rectangle.portrait.and.arrow.right outline (macOS SubscriptionSettingsCard) -->
+  <g stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <rect x="6.5" y="3.5" width="8.5" height="17" rx="1.75"/>
+    <path d="M16 12h4.5M20.5 12l-2.5-2.5M20.5 12l-2.5 2.5"/>
+  </g>
+</svg>

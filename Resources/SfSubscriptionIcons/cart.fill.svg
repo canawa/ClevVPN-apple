@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+  <!-- SF Symbols cart.fill proxy -->
+  <g stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3.5 4.5h2.1l1.35 9.1a1.8 1.8 0 0 0 1.78 1.5h8.65a1.8 1.8 0 0 0 1.76-1.4L20.5 8H7.1"/>
+    <circle cx="10" cy="19" r="1.45" fill="currentColor" stroke="none"/>
+    <circle cx="17" cy="19" r="1.45" fill="currentColor" stroke="none"/>
+  </g>
+</svg>

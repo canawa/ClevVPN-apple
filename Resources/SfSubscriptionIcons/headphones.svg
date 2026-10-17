@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+  <!-- SF Symbols headphones proxy -->
+  <g stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 13v-2a8 8 0 0 1 16 0v2"/>
+    <path d="M4 13h3v6H4zM17 13h3v6h-3z"/>
+    <path d="M17 19c-1 2-3 2-5 2"/>
+  </g>
+</svg>
